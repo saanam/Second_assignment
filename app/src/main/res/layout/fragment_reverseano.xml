@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragments.ReverseanoFragment">
+    tools:context=".Fragments.ReverseanoFragment"
+    android:orientation="vertical">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <EditText
+        android:id="@+id/etReserveN"
+        android:hint="Enter a No"
+        android:inputType="number"
+        android:layout_margin="20dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"></EditText>
 
-</FrameLayout>
+    <Button
+        android:id="@+id/btnReverseN"
+        android:text="Reverse"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Button>
+
+    <TextView
+        android:id="@+id/tvOutputReverseN"
+
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+</LinearLayout>
